@@ -10,9 +10,9 @@ The "email-scraper" is a Python script designed to extract email addresses from 
 ## Prerequisites
 Before using the "email-scraper" script, ensure you have the following:
 
-1.Python Installed: Make sure you have Python installed on your system. You can download and install Python from <a href="https://python.org/downloads">here</a>.
+1.Make sure you have Python installed on your system.Download and Install Python from <a href="https://python.org/downloads">here</a>.
 
-2.Python Packages: Install the required Python packages by running the following command:
+2.Install the required by running the following command:
 
 ```bash
 pip install beautifulsoup4 requests
