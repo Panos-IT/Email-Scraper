@@ -6,11 +6,11 @@ A Python script for extracting email addresses from web pages. Utilizing web scr
 
 ## How to use
 
-```
+```bash
 pip install beautifulsoup4 requests
 ```
 
 Run it:
-```
+```bash
 python email_scraper.py
 ```
