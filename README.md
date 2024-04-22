@@ -26,5 +26,5 @@ python email_scraper.py
 ## How to use
 
 
-#Contact
+# Contact
 savvidis.panagiotis.ps@gmail.com
