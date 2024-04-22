@@ -1,3 +1,16 @@
+from bs4 import BeautifulSoup
+import requests
+import requests.exceptions
+import urllib.parse
+from collections import deque
+import re
+
+user_url = str(input('[+] Enter Target URL To Scan: '))
+urls = deque([user_url])
+
+scraped_urls = set()
+emails = set()
+
 count = 0
 try:
     while len(urls):
