@@ -18,13 +18,11 @@ Before using the "email-scraper" script, ensure you have the following:
 pip install beautifulsoup4 requests
 ```
 
-Run it:
+## How to use
+Open a terminal in your system and type:
 ```bash
 python email_scraper.py
 ```
-
-## How to use
-Open a terminal in your system and type <code>python email-scarper.py</code>.
 
 # Contact
 savvidis.panagiotis.ps@gmail.com
