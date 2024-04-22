@@ -59,3 +59,10 @@ except KeyboardInterrupt:
 
 for mail in emails:
     print(mail)
+
+# Αντί για τον τελευταίο βρόχο που εκτυπώνει τα emails, προσθέτουμε κώδικα για εγγραφή σε αρχείο
+with open('emails.txt', 'w') as f:
+    for mail in emails:
+        f.write(mail + '\n')
+
+print("Emails extracted successfully and saved to 'emails.txt' file.")
