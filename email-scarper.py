@@ -5,7 +5,13 @@ import urllib.parse
 from collections import deque
 import re
 
+# Ζητάμε από τον χρήστη το URL που θέλει να σκανάρει
 user_url = str(input('[+] Enter Target URL To Scan: '))
+
+# Ζητάμε από τον χρήστη το πόσα URLs θέλει να σκανάρει
+max_urls = int(input('[+] Enter Maximum Number of URLs to Scan: '))
+
+# Αρχικοποιούμε την λίστα με τα URLs με το δοθέν URL
 urls = deque([user_url])
 
 scraped_urls = set()
@@ -15,7 +21,7 @@ count = 0
 try:
     while len(urls):
         count += 1
-        if count == 100:
+        if count == max_urls:
             break
         url = urls.popleft()
         scraped_urls.add(url)
