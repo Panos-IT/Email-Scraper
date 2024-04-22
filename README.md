@@ -24,7 +24,7 @@ python email_scraper.py
 ```
 
 ## How to use
-
+Open a terminal in your system and type python <code>email-scarper.py</code>.
 
 # Contact
 savvidis.panagiotis.ps@gmail.com
