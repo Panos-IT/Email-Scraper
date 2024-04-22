@@ -1,16 +1,3 @@
-from bs4 import BeautifulSoup
-import requests
-import requests.exceptions
-import urllib.parse
-from collections import deque
-import re
-
-user_url = str(input('[+] Enter Target URL To Scan: '))
-urls = deque([user_url])
-
-scraped_urls = set()
-emails = set()
-
 count = 0
 try:
     while len(urls):
@@ -26,9 +13,13 @@ try:
         path = url[:url.rfind('/')+1] if '/' in parts.path else url
 
         print('[%d] Processing %s' % (count, url))
+        
         try:
             response = requests.get(url)
         except (requests.exceptions.MissingSchema, requests.exceptions.ConnectionError):
+            continue
+        except requests.exceptions.InvalidURL:
+            print("Invalid URL:", url)
             continue
 
         new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
