@@ -18,6 +18,11 @@ Before using the "email-scraper" script, ensure you have the following:
 pip install beautifulsoup4 requests
 ```
 
+3.Install lxml module ( if you don't have it already ):
+```bash
+pip install lxml
+```
+
 ## How to use
 Open a terminal in your system and type:
 ```bash
