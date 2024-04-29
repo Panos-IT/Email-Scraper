@@ -5,13 +5,22 @@ import urllib.parse
 from collections import deque
 import re
 
-# Ζητάμε από τον χρήστη το URL που θέλει να σκανάρει
+# Request the target URL to scan from the user.
+# Solicita al usuario la URL objetivo para escanear.
+# Ζητάμε από τον χρήστη το URL που θέλει να σκανάρει.
+# 请求用户输入要扫描的目标网址。
 user_url = str(input('[+] Enter Target URL To Scan: '))
 
-# Ζητάμε από τον χρήστη το πόσα URLs θέλει να σκανάρει
+# Request the maximum number of URLs to scan from the user.
+# Solicita al usuario el número máximo de URLs para escanear.
+# Ζητάμε από τον χρήστη το πόσα URLs θέλει να σκανάρει.
+# 请求用户输入要扫描的URL最大数量。
 max_urls = int(input('[+] Enter Maximum Number of URLs to Scan: '))
 
-# Αρχικοποιούμε την λίστα με τα URLs με το δοθέν URL
+# Initialize the URL deque with the given URL.
+# Inicializa la cola de URLs con la URL dada.
+# Αρχικοποιούμε την λίστα με τα URLs με το δοθέν URL.
+# 使用给定的URL初始化URL双端队列。
 urls = deque([user_url])
 
 scraped_urls = set()
@@ -60,7 +69,10 @@ except KeyboardInterrupt:
 for mail in emails:
     print(mail)
 
-# Αντί για τον τελευταίο βρόχο που εκτυπώνει τα emails, προσθέτουμε κώδικα για εγγραφή σε αρχείο
+# Instead of the last loop that prints emails, we add code to write them to a file.
+# En lugar del último bucle que imprime los correos electrónicos, agregamos código para escribirlos en un archivo.
+# Αντί για τον τελευταίο βρόχο που εκτυπώνει τα emails, προσθέτουμε κώδικα για εγγραφή σε αρχείο.
+# 代替最后一个循环打印电子邮件，我们添加代码将它们写入文件。
 with open('emails.txt', 'w') as f:
     for mail in emails:
         f.write(mail + '\n')
