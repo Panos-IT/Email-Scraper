@@ -31,6 +31,9 @@ python email_scraper.py
 
 # Contact
 savvidis.panagiotis.ps@gmail.com
+
 <a href="https://www.linkedin.com/in/panagiotissavvidis/">LinkedIn</a>
+
 <a href="https://www.instagram.com/savvidis.panagiotis">Instagram</a>
+
 <a href="https://twitter.com/panossavvidis17">X (Twitter)</a>
